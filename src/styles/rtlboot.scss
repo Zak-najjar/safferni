@@ -1,1 +1,15 @@
+@use './variables.scss' as colors;
+
+$basic: colors.$color__primary;
+$accent: colors.$color__accent;
+
+$theme-colors: (
+  "basic": $basic,
+  "accent": $accent
+);
+
+
+
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+

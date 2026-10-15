@@ -1,14 +1,84 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="zakaria najjar">
   <meta name="description" content="موقع لحجز الرحلات السياحية المناسبة">
-    <link rel="icon" type="image/png" href="./images/safferni-icon.png">
+  <link rel="icon" type="image/png" href="./images/safferni-icon.png">
   <title>سفرني</title>
 </head>
-<body>
-  
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+  <header>
+    <div class="head-up">
+      <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="./images/safferni-icon.svg" alt="safferni"> سفرني</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#safferniNavbar"
+            aria-controls="safferniNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="safferniNavbar">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#head-foot">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#services">خدماتنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tours">جولاتنا السياحية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-us">تواصل معنا</a>
+              </li>
+            </ul>
+            <div class="sign-in">
+              <a href="./login.html">
+                <button type="button" class="btn btn-outline-basic">تسجيل الدخول</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+    <div class="head-foot " id="head-foot">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="head-text">
+              <h1>
+                الشركة السياحية الأفضل في الوطن العربي
+              </h1>
+              <p>
+                هدفنا مساعدتك وتيسير أمورك، لا تتردد بالتواصل معنا فنحن هنا لنساعدك على إيجاد كل ما تحتاج له. إن كنت
+                تبحث عن سكن أو جولة سياحية لتقضي أفضل الأوقات فقد وجدت طلبك.
+              </p>
+            </div>
+            <a href="#tours">
+              <button type="button" class="btn btn-basic mt-2">استكشف جولاتنا</button>
+
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <div class="head-img">
+              <img src="./images/travel.jpg" alt="travel">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="services" style="height: 1500px;"></section>
+    <section id="tours" style="height: 1500px;"></section>
+    <section id="contact-us" style="height: 1500px;"></section>
+  </main>
+  <footer>
+  </footer>
 </body>
+
 </html>

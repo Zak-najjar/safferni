@@ -1,3 +1,8 @@
+@use 'mixins.scss';
+@use 'variables.scss';
+@use './home.scss';
+
+
 @font-face {
   font-family: "Cairo";
   src: url(../fonts/Cairo-Regular.ttf),
@@ -5,7 +10,12 @@
   font-style: normal;
 }
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: "Cairo", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }

@@ -3,6 +3,7 @@ import { fileURLToPath } from "node:url";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import CssMinimizerPlugin from "css-minimizer-webpack-plugin";
+import webpack from 'webpack';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -21,6 +22,7 @@ export default {
     hot: false,
     compress: true,
     port: 9000,
+    open: true,
     devMiddleware: {
       writeToDisk: true,
     },
@@ -80,5 +82,9 @@ export default {
       filename: "css/style.css",
     }),
     new CssMinimizerPlugin(),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+    }),
   ],
 };
