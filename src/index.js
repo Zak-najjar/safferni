@@ -7,7 +7,7 @@ import $ from 'jquery';
 // scroll top for navbar transition
 
 $(window).scroll( function () {
-  if($(this).scrollTop() >= 200){
+  if($(this).scrollTop() >= 100){
     $('#navbar').addClass('modified')
   }else {
     $('#navbar').removeClass('modified')

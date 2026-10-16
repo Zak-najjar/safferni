@@ -12,7 +12,7 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
   <header>
-    <div class="head-up">
+    <div class="head-up" id="header">
       <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src="./images/safferni-icon.svg" alt="safferni"> سفرني</a>
@@ -23,7 +23,7 @@
           <div class="collapse navbar-collapse " id="safferniNavbar">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#head-foot">الرئيسية</a>
+                <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link " aria-current="page" href="#services">خدماتنا</a>
@@ -73,9 +73,138 @@
     </div>
   </header>
   <main>
-    <section id="services" style="height: 1500px;"></section>
-    <section id="tours" style="height: 1500px;"></section>
-    <section id="contact-us" style="height: 1500px;"></section>
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="section-title">
+          خدماتنا
+        </h2>
+        <div class="row">
+          <div class="service clearfix col-md-5 ">
+            <div class="overlay">
+              <div class="float-start">
+                <div class="service-text">
+                  <h4 class="service-title">
+                    حجز سيارة
+                  </h4>
+                  <p class="service-p">نقدم لكم خدمة حجز السيارات سواءً سيارات الأوتوماتيك أو السيارات العادي</p>
+                </div>
+              </div>
+            </div>
+            <div class="float-end">
+              <div class="service-icon ">
+                <i class="fa-solid fa-car-rear fa-3x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="service clearfix col-md-5 offset-md-1">
+            <div class="overlay">
+              <div class="float-start">
+                <div class="service-text">
+                  <h4 class="service-title">
+                    حجز سكن
+                  </h4>
+                  <p class="service-p">نقدم لكم خدمة الحجوزات في أفضل الفنادق والشقق ذات الإطلالة الرائعة والقريبة من جميع
+                    الخدمات.</p>
+                </div>
+              </div>
+            </div>
+            <div class="float-end">
+              <div class="service-icon">
+                <i class="fa-solid fa-house-chimney fa-3x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="service clearfix col-md-5 ">
+            <div class="overlay">
+              <div class="float-start">
+                <div class="service-text">
+                  <h4 class="service-title">
+                    الاستقبال من المطار
+                  </h4>
+                  <p class="service-p"> نقدم لكم خدمة الاستقبال من المطار وتوديعكم في المطار بحيث يكون مندوبنا متواجد
+                    دائمًا
+                    في خدمتكم
+                    أثناء
+                    وصولكم أو ذهابكم للمطار مع أفضل وسائل النقل.</p>
+                </div>
+              </div>
+            </div>
+            <div class="float-end">
+              <div class="service-icon">
+                <i class="fa-solid fa-plane-arrival fa-3x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="service clearfix col-md-5 offset-md-1">
+            <div class="overlay">
+              <div class="float-start">
+                <div class="service-text">
+                  <h4 class="service-title">
+                    جولات سياحية
+                  </h4>
+                  <p class="service-p">جولات سياحية خاصة مع أمهر السائقين كما نقدم جولات جماعية بأحدث الباصات مع أفضل
+                    المرشدين السياحيين
+                    الذين
+                    يُجيدون اللغة العربية ولإنجليزية.</p>
+                </div>
+              </div>
+            </div>
+            <div class="float-end">
+              <div class="service-icon">
+                <i class="fa-solid fa-map-location-dot fa-3x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tours" id="tours">
+      <div class="container">
+        <h2 class="section-title">
+          جولاتنا
+        </h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <img src="./images/jawla-1.jpg" class="card-img-top" alt="jawla1">
+              <div class="card-body">
+                <h5 class="card-title">رحلة الى الأهرامات في مصر</h5>
+                <div class="clearfix">
+                  <div class="float-start">
+                    <a href="./page-eygpt.html" class="btn btn-lg btn-basic tour-btn">تصفح الجولة</a>
+                  </div>
+                  <div class="float-end">
+                    <div class="price">
+                      السعر
+                      <span>$1250</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <img src="./images/jawla-2.jpg" class="card-img-top" alt="jawla1">
+              <div class="card-body">
+                <h5 class="card-title">رحلة الى مدينة اسطنبول في تركيا</h5>
+                <div class="clearfix">
+                  <div class="float-start">
+                    <a href="./page-turkey.html" class="btn btn-lg btn-basic tour-btn">تصفح الجولة</a>
+                  </div>
+                  <div class="float-end">
+                    <div class="price">
+                      السعر
+                      <span>$1540</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
   </footer>
