@@ -3,17 +3,20 @@ import { fileURLToPath } from "node:url";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import CssMinimizerPlugin from "css-minimizer-webpack-plugin";
-import webpack from 'webpack';
+import webpack from "webpack";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default {
   mode: "development",
-  entry: "./src/index.js",
+  entry: {
+    index: "./src/index.js",
+    pageEygpt: "./src/pageEygpt.js"
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "main.js",
+    filename: "[name].js",
   },
   devServer: {
     static: {
@@ -77,6 +80,12 @@ export default {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "./src/index.html",
+      chunks: ['index'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "Eygpt.html",
+      template: "./src/pageEygpt.html",
+      chunks: ['pageEygpt'],
     }),
     new MiniCssExtractPlugin({
       filename: "css/style.css",

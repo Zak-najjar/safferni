@@ -12,10 +12,11 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
   <header>
-    <div class="head-up" id="header">
+    <div class="head-up">
       <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="./images/safferni-icon.svg" alt="safferni"> سفرني</a>
+          <a class="navbar-brand" href="index.html"><img src="./images/safferni-icon.svg" alt="safferni" loading="lazy">
+            سفرني</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#safferniNavbar"
             aria-controls="safferniNavbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,7 +24,7 @@
           <div class="collapse navbar-collapse " id="safferniNavbar">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+                <a class="nav-link active" aria-current="page" href="#head-foot">الرئيسية</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link " aria-current="page" href="#services">خدماتنا</a>
@@ -45,11 +46,11 @@
       </nav>
 
     </div>
-    <div class="head-foot " id="head-foot">
+    <div class="head-foot" id="head-foot">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
-            <div class="head-text">
+          <div class="col-lg-6 mb-5">
+            <div class="header__text">
               <h1>
                 الشركة السياحية الأفضل في الوطن العربي
               </h1>
@@ -64,8 +65,8 @@
             </a>
           </div>
           <div class="col-lg-6">
-            <div class="head-img">
-              <img src="./images/travel.jpg" alt="travel">
+            <div class="header__img">
+              <img src="./images/travel.jpg" alt="travel" loading="lazy">
             </div>
           </div>
         </div>
@@ -75,18 +76,18 @@
   <main>
     <section class="services" id="services">
       <div class="container">
-        <h2 class="section-title">
+        <h2 class="section__title">
           خدماتنا
         </h2>
         <div class="row">
-          <div class="service clearfix col-md-5 ">
+          <div class="service clearfix col-lg-5 ">
             <div class="overlay">
               <div class="float-start">
-                <div class="service-text">
-                  <h4 class="service-title">
+                <div class="service__text">
+                  <h4 class="service__title">
                     حجز سيارة
                   </h4>
-                  <p class="service-p">نقدم لكم خدمة حجز السيارات سواءً سيارات الأوتوماتيك أو السيارات العادي</p>
+                  <p class="service__p">نقدم لكم خدمة حجز السيارات سواءً سيارات الأوتوماتيك أو السيارات العادي</p>
                 </div>
               </div>
             </div>
@@ -96,14 +97,15 @@
               </div>
             </div>
           </div>
-          <div class="service clearfix col-md-5 offset-md-1">
+          <div class="service clearfix col-lg-5 offset-lg-1">
             <div class="overlay">
               <div class="float-start">
-                <div class="service-text">
-                  <h4 class="service-title">
+                <div class="service__text">
+                  <h4 class="service__title">
                     حجز سكن
                   </h4>
-                  <p class="service-p">نقدم لكم خدمة الحجوزات في أفضل الفنادق والشقق ذات الإطلالة الرائعة والقريبة من جميع
+                  <p class="service__p">نقدم لكم خدمة الحجوزات في أفضل الفنادق والشقق ذات الإطلالة الرائعة والقريبة من
+                    جميع
                     الخدمات.</p>
                 </div>
               </div>
@@ -114,14 +116,14 @@
               </div>
             </div>
           </div>
-          <div class="service clearfix col-md-5 ">
+          <div class="service clearfix col-lg-5 ">
             <div class="overlay">
               <div class="float-start">
-                <div class="service-text">
-                  <h4 class="service-title">
+                <div class="service__text">
+                  <h4 class="service__title">
                     الاستقبال من المطار
                   </h4>
-                  <p class="service-p"> نقدم لكم خدمة الاستقبال من المطار وتوديعكم في المطار بحيث يكون مندوبنا متواجد
+                  <p class="service__p"> نقدم لكم خدمة الاستقبال من المطار وتوديعكم في المطار بحيث يكون مندوبنا متواجد
                     دائمًا
                     في خدمتكم
                     أثناء
@@ -135,14 +137,14 @@
               </div>
             </div>
           </div>
-          <div class="service clearfix col-md-5 offset-md-1">
+          <div class="service clearfix col-lg-5 offset-lg-1">
             <div class="overlay">
               <div class="float-start">
-                <div class="service-text">
-                  <h4 class="service-title">
+                <div class="service__text">
+                  <h4 class="service__title">
                     جولات سياحية
                   </h4>
-                  <p class="service-p">جولات سياحية خاصة مع أمهر السائقين كما نقدم جولات جماعية بأحدث الباصات مع أفضل
+                  <p class="service__p">جولات سياحية خاصة مع أمهر السائقين كما نقدم جولات جماعية بأحدث الباصات مع أفضل
                     المرشدين السياحيين
                     الذين
                     يُجيدون اللغة العربية ولإنجليزية.</p>
@@ -160,42 +162,46 @@
     </section>
     <section class="tours" id="tours">
       <div class="container">
-        <h2 class="section-title">
+        <h2 class="section__title">
           جولاتنا
         </h2>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card">
-              <img src="./images/jawla-1.jpg" class="card-img-top" alt="jawla1">
-              <div class="card-body">
-                <h5 class="card-title">رحلة الى الأهرامات في مصر</h5>
-                <div class="clearfix">
-                  <div class="float-start">
-                    <a href="./page-eygpt.html" class="btn btn-lg btn-basic tour-btn">تصفح الجولة</a>
-                  </div>
-                  <div class="float-end">
-                    <div class="price">
-                      السعر
-                      <span>$1250</span>
+        <div class="tour">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="./images/jawla-1.jpg" class="card-img-top" alt="jawla1" loading="lazy">
+                  <div class="card-body">
+                    <h5 class="card-title">رحلة الى الأهرامات في مصر</h5>
+                    <div class="clearfix">
+                      <div class="float-start">
+                        <a href="./pageEygpt.html" class="btn btn-lg btn-basic tour-btn">تصفح الجولة</a>
+                      </div>
+                      <div class="float-end">
+                        <div class="price">
+                          السعر
+                          <span>$1250</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card">
-              <img src="./images/jawla-2.jpg" class="card-img-top" alt="jawla1">
-              <div class="card-body">
-                <h5 class="card-title">رحلة الى مدينة اسطنبول في تركيا</h5>
-                <div class="clearfix">
-                  <div class="float-start">
-                    <a href="./page-turkey.html" class="btn btn-lg btn-basic tour-btn">تصفح الجولة</a>
-                  </div>
-                  <div class="float-end">
-                    <div class="price">
-                      السعر
-                      <span>$1540</span>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="./images/jawla-2.jpg" class="card-img-top" alt="jawla1" loading="lazy">
+                  <div class="card-body">
+                    <h5 class="card-title">رحلة الى مدينة اسطنبول في تركيا</h5>
+                    <div class="clearfix">
+                      <div class="float-start">
+                        <a href="./pageTurkey.html" class="btn btn-lg btn-basic tour-btn">تصفح الجولة</a>
+                      </div>
+                      <div class="float-end">
+                        <div class="price">
+                          السعر
+                          <span>$1540</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -206,7 +212,53 @@
       </div>
     </section>
   </main>
-  <footer>
+  <footer id="contact-us">
+    <div class="foot-up">
+      <div class="container">
+        <h2 class="section__title">
+          تواصل معنا
+        </h2>
+        <div class="contact row">
+          <div class="col-md-5">
+            <ul class="contact__info">
+              <li class="contact__item">
+                <span class="contact__item-icon">
+                  <i class="fa-solid fa-phone "></i>
+                </span>
+                <span class="contact__item-text" dir="ltr">+966 51 182 6596</span>
+              </li>
+              <li class="contact__item">
+                <span class="contact__item-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </span>
+                <span class="contact__item-text">السعودية , الرياض , مركز المملكة , العليا 12214</span>
+              </li>
+              <li class="contact__item">
+                <span class="contact__item-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </span>
+                <span class="contact__item-text">example@gmail.com</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-7">
+            <div class="contact__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1077.5553190190578!2d46.67369660066707!3d24.711439769428143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2ee72cb63c9975%3A0xd2972fb1611f2b05!2sKingdom%20Center%20Sky%20Bridge!5e0!3m2!1sar!2sjo!4v1792224513445!5m2!1sar!2sjo"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="foot-down">
+      <div class="container text-center">
+        جميع الحقوق محفوظة 
+        <span id="currentYear"></span>
+        &copy;
+      </div>
+    </div>
   </footer>
 </body>
 

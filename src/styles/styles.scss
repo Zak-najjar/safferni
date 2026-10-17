@@ -1,16 +1,15 @@
-@use 'mixins.scss';
-@use 'variables.scss';
-@use 'variables.scss' as colors;
-@use './home.scss';
-
+@use "mixins.scss";
+@use "variables.scss";
+@use "variables.scss" as colors;
+@use "./home.scss";
 
 @font-face {
   font-family: "Cairo";
-  src: url(../fonts/Cairo-Regular.ttf),
-      url(../fonts/Cairo-Regular.ttf) format('truetype');
+  src:
+    url(../fonts/Cairo-Regular.ttf),
+    url(../fonts/Cairo-Regular.ttf) format("truetype");
   font-style: normal;
 }
-
 
 * {
   margin: 0;
@@ -18,12 +17,31 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Cairo", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family:
+    "Cairo",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
 }
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   color: colors.$color__heading;
 }
 p {
   color: colors.$color__content;
+}
+.tour {
+  margin-right: auto;
+  margin-left: auto;
+  .swiper {
+    width: 560px;
+    height: 100%;
+  }
 }

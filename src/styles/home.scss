@@ -27,7 +27,7 @@ header {
           a.nav-link {
             color: colors.$color__primary;
             padding: 7px 15px;
-            transition: all 0.5s ease;
+            transition: all 0.3s ease;
             &:hover,
             &.active {
               color: #fff;
@@ -46,11 +46,12 @@ header {
     }
   }
   .head-foot {
-    @include mixins.section-padding();
+    @include mixins.section-margin();
     margin-top: 100px;
     background-color: colors.$color__section-background;
+
     .row {
-      .head-text {
+      .header__text {
         h1 {
           margin-top: 70px;
           font-size: 40px;
@@ -76,14 +77,15 @@ header {
   }
 }
 
+h2.section__title {
+  margin-bottom: 45px;
+  font-weight: bold;
+  margin-right: -30px;
+}
+
 main {
-  h2.section-title {
-    margin-bottom: 45px;
-    font-weight: bold;
-    margin-right: -30px;
-  }
   section.services {
-    @include mixins.section-padding();
+    @include mixins.section-margin();
     .service {
       position: relative;
       height: 180px;
@@ -109,15 +111,15 @@ main {
         background-color: colors.$color__background;
         border-radius: 35px;
         transition: all 0.3s ease;
-        .service-text {
+        .service__text {
           width: 70%;
           height: 100%;
-          .service-title {
+          .service__title {
             font-size: 20px;
             font-weight: bold;
             margin-bottom: 15px;
           }
-          .service-p {
+          .service__p {
             min-height: 100%;
             font-size: 14px;
           }
@@ -132,10 +134,9 @@ main {
     }
   }
   section.tours {
-    @include mixins.section-padding();
+    @include mixins.section-margin();
     background-color: colors.$color__section-background;
     .card {
-      max-width: 500px;
       padding: 15px;
       border: 1px solid colors.$color__heading;
       transition: all 0.3s ease;
@@ -163,3 +164,140 @@ main {
     }
   }
 }
+
+footer {
+  .foot-up {
+    @include mixins.section-margin();
+    .contact {
+      ul.contact__info {
+        padding: 0;
+        list-style-type: none;
+        margin-top: 50px;
+        li.contact__item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 25px;
+          .contact__item-text {
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 15px;
+          }
+          .contact__item-icon {
+            font-size: 20px;
+            padding: 5px;
+            background-color: colors.$color__section-background;
+            border: 1px solid colors.$color__content;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      .contact__map {
+        iframe {
+          width: 100%;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+  .foot-down {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: colors.$color__section-background;
+  }
+}
+
+@media (max-width: 576px) {
+  main section.tours .card {
+    padding: 10px;
+  }
+  main section.tours .card .card-body .clearfix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .float-start {
+      order: 2;
+      a {
+        width: 100%;
+      }
+    }
+    .float-end {
+      order: 1;
+      .price {
+        display: block;
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 20px;
+        text-align: center;
+        padding: 8px;
+      }
+    }
+  }
+  main section.tours .card .card-body .card-title {
+    font-size: 20px !important;
+    margin-bottom: 15px;
+  }
+  main section.tours .card .card-body .tour-btn {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .tour {
+    .swiper {
+      width: 75% !important;
+    }
+  }
+  main section.tours .card .card-body .card-title {
+    font-size: 26px;
+  }
+
+  main section.tours .card .card-body .price {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  header .head-up nav ul.navbar-nav .nav-item {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  header .head-foot {
+    padding-top: 40px;
+  }
+
+  header .head-foot .row .header__text h1 {
+    margin-top: 40px;
+  }
+
+  main section.services .service .overlay .service__text {
+    width: 100%;
+  }
+  main section.services .service .overlay .service__text .service__title {
+    margin-bottom: 10px;
+  }
+  main section.services .service .overlay .service__text .service__p {
+    font-size: 13px;
+  }
+  .sign-in {
+    display: flex;
+    justify-content: center;
+    a {
+      width: 70%;
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  h2.section__title {
+    margin-right: 0;
+  }
+  main section.services .service .overlay .service__text {
+    width: 75%;
+  }
+}
+
