@@ -2,9 +2,8 @@ import "bootstrap/dist/js/bootstrap.bundle.js";
 import "@fortawesome/fontawesome-free/js/all.min.js";
 import "./styles/rtlboot.scss";
 import "./styles/styles.scss";
+import './styles/pageEygpt.scss';
 import $ from "jquery";
-import Swiper from "swiper/bundle";
-import "swiper/css/bundle";
 
 // scroll top for navbar transition
 
@@ -16,11 +15,6 @@ $(window).scroll(function () {
   }
 });
 
-// swiper carousel pages
-var swiper = new Swiper(".mySwiper", {
-  effect: "cards",
-  grabCursor: true,
-});
 
 
 // current year 

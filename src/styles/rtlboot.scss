@@ -1,7 +1,7 @@
 @use './variables.scss' as colors;
 
-$basic: colors.$color__primary;
-$accent: colors.$color__accent;
+$basic: #0b6e99;
+$accent: #f28c28;
 
 $theme-colors: (
   "basic": $basic,

@@ -12,7 +12,7 @@ export default {
   mode: "development",
   entry: {
     index: "./src/index.js",
-    pageEygpt: "./src/pageEygpt.js"
+    swiper: "./src/swiper.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -58,7 +58,6 @@ export default {
           "sass-loader",
         ],
       },
-
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
@@ -75,20 +74,20 @@ export default {
       },
     ],
   },
-
+  // if you don't need swiper at your page you must remove swiper  from chunks
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "./src/index.html",
-      chunks: ['index'],
+      chunks: ["index", "swiper"],
     }),
     new HtmlWebpackPlugin({
-      filename: "Eygpt.html",
+      filename: "pageEygpt.html",
       template: "./src/pageEygpt.html",
-      chunks: ['pageEygpt'],
+      chunks: ["index", "swiper"],
     }),
     new MiniCssExtractPlugin({
-      filename: "css/style.css",
+      filename: "css/[name].css",
     }),
     new CssMinimizerPlugin(),
     new webpack.ProvidePlugin({

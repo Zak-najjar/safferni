@@ -2,6 +2,7 @@
 @use "variables.scss";
 @use "variables.scss" as colors;
 @use "./home.scss";
+@use "./pageEygpt.scss";
 
 @font-face {
   font-family: "Cairo";
@@ -26,6 +27,7 @@ body {
     Arial,
     sans-serif;
 }
+
 
 h1,
 h2,

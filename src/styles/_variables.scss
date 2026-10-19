@@ -1,7 +1,21 @@
-$color__primary: #0B6E99;
-$color__primary--dark: #084C6B;
-$color__accent: #F28C28;
-$color__section-background: #EEF4F7;
-$color__background: #FFFFFF;
-$color__heading: #1F2A37;
-$color__content: #5B6773;
+$color__background: #ffffff;
+$color__heading: #1f2a37;
+$color__content: #5b6773;
+$color__accent: #f28c28;
+
+
+body {
+  --color-primary: #0b6e99;
+  --color-primary-dark: #084c6b;
+  --color-section-bg: #eef4f7;
+
+  &[color-theme="eygpt"] {
+    --color-primary: #C58B2A;          
+    --color-primary-dark: #7A4E12;
+    --color-section-bg: #FBF3E2;        
+  }
+}
+
+$color__primary: var(--color-primary);
+$color__primary--dark: var(--color-primary-dark);
+$color__section-background: var(--color-section-bg);
