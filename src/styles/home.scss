@@ -46,7 +46,7 @@
       }
     }
     .head-foot {
-      @include mixins.section-margin();
+      @include mixins.section-padding();
       margin-top: 100px;
       background-color: colors.$color__section-background;
 
@@ -85,7 +85,7 @@
 
   main {
     section.services {
-      @include mixins.section-margin();
+      @include mixins.section-padding();
       .service {
         position: relative;
         height: 180px;
@@ -134,7 +134,7 @@
       }
     }
     section.tours {
-      @include mixins.section-margin();
+      @include mixins.section-padding();
       background-color: colors.$color__section-background;
       .card {
         padding: 15px;
@@ -167,7 +167,7 @@
 
   footer {
     .foot-up {
-      @include mixins.section-margin();
+      @include mixins.section-padding();
       .contact {
         ul.contact__info {
           padding: 0;
