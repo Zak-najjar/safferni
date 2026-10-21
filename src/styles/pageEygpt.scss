@@ -1,42 +1,6 @@
 @use "./variables.scss" as colors;
 @use "./mixins.scss" as mixins;
 
-.intro {
-  @include mixins.section-padding();
-  margin-top: 100px;
-  background-color: colors.$color__section-background;
-  .heading {
-    .heading__title {
-      font-size: 55px;
-      color: colors.$color__heading;
-      font-weight: bold;
-    }
-    .heading__content {
-      margin-top: 25px;
-      font-size: 20px;
-      line-height: 35px;
-      color: colors.$color__content;
-    }
-  }
-}
-
-.gallery {
-  @include mixins.section-padding();
-  position: relative;
-  align-items: center;
-  &::after {
-    content: "";
-    position: absolute;
-    left: 15%;
-    bottom: 0;
-    width: 70%;
-    height: 2px;
-    background-color: colors.$color__primary;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-}
 
 body.eygpt {
   .swiper {

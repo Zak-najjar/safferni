@@ -86,6 +86,21 @@ export default {
       template: "./src/pageEygpt.html",
       chunks: ["index", "swiper"],
     }),
+    new HtmlWebpackPlugin({
+      filename: "pageTurkey.html",
+      template: "./src/pageTurkey.html",
+      chunks: ["index", "swiper"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "login.html",
+      template: "./src/login.html",
+      chunks: ["index"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "register.html",
+      template: "./src/register.html",
+      chunks: ["index"],
+    }),
     new MiniCssExtractPlugin({
       filename: "css/[name].css",
     }),

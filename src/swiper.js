@@ -44,3 +44,44 @@ var swiper = new Swiper(".EygptGallery--small", {
   },
 });
 
+
+
+
+// turkey page gallery
+var swiper = new Swiper(".TurkeyGallery", {
+  slidesPerView: 3,
+  centeredSlides: true,
+  centeredSlidesBounds: true,
+  normalizeSlideIndex: false,
+  grabCursor: true,
+  loop: true,
+  loopPreventsSliding: false,
+  effect: "coverflow",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 125,
+    depth: 500,
+    slideShadows: false,
+  },
+});
+// turkey small gallery
+var swiper = new Swiper(".TurkeyGallery--small", {
+  slidesPerView: 3,
+  autoplay: true,
+  loop: true,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    "@0.00": {
+      slidesPerView: 1,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});
+

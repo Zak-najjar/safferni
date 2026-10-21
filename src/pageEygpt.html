@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="zakaria najjar">
   <meta name="description" content="موقع لحجز الرحلات السياحية المناسبة">
-  <link rel="icon" type="image/png" href="./images/safferni-icon.png">
+  <link rel="icon" type="image/png" href="./images/safferni-icon-bg-gray.jpg">
   <title>رحلة سياحية الى مصر</title>
 </head>
+<!-- to change the theme you must add custom theme in variables -->
 
-<body class="eygpt" color-theme="eygpt">
+<body class="eygpt" color-theme="eygpt" data-bs-spy="scroll" data-bs-target="#navbar">
   <header>
     <div class="head-up">
       <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
@@ -33,9 +34,9 @@
                 <a class="nav-link" href="#contact-us">تواصل معنا</a>
               </li>
             </ul>
-            <div class="sign-in">
-              <a href="./login.html">
-                <button type="button" class="btn btn-outline-accent">تسجيل الدخول</button>
+            <div class="login">
+              <a href="./register.html">
+                <button type="button" class="btn btn-outline-secondary">تسجيل الدخول</button>
               </a>
             </div>
           </div>
@@ -43,7 +44,6 @@
       </nav>
     </div>
   </header>
-
   <main>
     <section class="intro text-center" id="intro">
       <div class="container">
@@ -65,37 +65,37 @@
         <h2 class="section__title">
           ما سوف ترونه في الرحلة
         </h2>
+        <div class="swiper EygptGallery--small d-lg-none d-block">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/eygptG-1.jpg" loading="lazy" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/eygptG-2.jpg" loading="lazy" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/eygptG-3.jpg" loading="lazy" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/eygptG-4.jpg" loading="lazy" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/eygptG-5.jpg" loading="lazy" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/eygptG-6.jpg" loading="lazy" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/eygptG-7.jpg" loading="lazy" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/eygptG-8.jpg" loading="lazy" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
       <div class="swiper EygptGallery d-lg-block d-none">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./images/eygptG-1.jpg" loading="lazy" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/eygptG-2.jpg" loading="lazy" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/eygptG-3.jpg" loading="lazy" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/eygptG-4.jpg" loading="lazy" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/eygptG-5.jpg" loading="lazy" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/eygptG-6.jpg" loading="lazy" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/eygptG-7.jpg" loading="lazy" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/eygptG-8.jpg" loading="lazy" />
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <div class="swiper EygptGallery--small d-lg-none d-block">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="./images/eygptG-1.jpg" loading="lazy" />

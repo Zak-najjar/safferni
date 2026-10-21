@@ -14,6 +14,11 @@ body {
     --color-primary-dark: #7A4E12;
     --color-section-bg: #FBF3E2;        
   }
+  &[color-theme="turkey"] {
+    --color-primary: #B3261E;          
+    --color-primary-dark: #771A14;
+    --color-section-bg: #F7E9E8;        
+  }
 }
 
 $color__primary: var(--color-primary);
