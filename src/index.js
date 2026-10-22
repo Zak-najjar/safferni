@@ -15,6 +15,10 @@ $(window).scroll(function () {
   }
 });
 
+// current year
+const Year = new Date().getFullYear();
+document.getElementById("currentYear").innerText = Year;
+
 // validation for login
 (() => {
   "use strict";
@@ -35,5 +39,3 @@ $(window).scroll(function () {
 })();
 
 
-// current year
-document.getElementById("currentYear").innerText = new Date().getFullYear();
