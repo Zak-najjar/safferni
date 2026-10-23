@@ -2,12 +2,12 @@
 @use "./mixins.scss" as mixins;
 @use "sass:color";
 
-
 .sign-up {
   width: 100%;
   form#register {
     width: 500px;
     padding: 25px;
+    margin-top: 50px;
     border: 1px solid adjust-color($color: #fff, $lightness: -15%, $alpha: 1);
     border-radius: 25px;
     input {
@@ -16,15 +16,17 @@
     [type="date"] {
       text-align: right;
       padding-right: 20px;
-      
     }
-
     button {
-      width: 40%;
+      width: 100%;
     }
-    .HaveAccount {
-      display: inline;
-      margin-right: 20%;
-    }
+  }
+}
+
+
+@media (max-width:767px) {
+  .HaveAccount {
+    display: block;
+    margin-top: 20px;
   }
 }

@@ -66,12 +66,18 @@ export default {
         },
       },
       {
-        test: /\.(eot|svg|ttf|woff)$/i,
+        test: /\.(eot|ttf|woff)$/i,
         type: "asset/resource",
         generator: {
           filename: "./fonts/[name][ext]",
         },
       },
+    ],
+  },
+  optimization: {
+    minimize:true,
+    minimizer: [
+    new CssMinimizerPlugin(),
     ],
   },
   // if you don't need swiper at your page you must remove swiper  from chunks
@@ -104,7 +110,6 @@ export default {
     new MiniCssExtractPlugin({
       filename: "css/[name].css",
     }),
-    new CssMinimizerPlugin(),
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",

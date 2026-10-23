@@ -1,9 +1,6 @@
 @use "./variables.scss" as colors;
 @use "./mixins.scss" as mixins;
 @use "sass:color";
-// .pageLogin {
-//   background-color: ;
-// }
 .sign-in {
   width: 100%;
   form#login {
@@ -21,11 +18,15 @@
     }
 
     button {
-      width: 40%;
+      width: 100%;
     }
-    .forget {
-      display: inline;
-      margin-right: 20%;
-    }
+    
+    
+  }
+}
+
+@media (max-width:767px) {
+  .login-links {
+    margin-top: 30px;
   }
 }
